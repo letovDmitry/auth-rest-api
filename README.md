@@ -1,1 +1,1 @@
-# rest-api
+# auth-rest-api
