@@ -7,6 +7,8 @@ const port = config.get<number>('port')
 
 const app: Express = express();
 
+app.use(express.json())
+
 app.listen(process.env.PORT || port, async () => {
     console.log('server runs')
     await connect()

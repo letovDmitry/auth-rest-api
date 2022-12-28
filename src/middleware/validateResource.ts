@@ -10,6 +10,7 @@ const validate = (schema: AnyZodObject) => (req: Request, res: Response, next: N
             params: req.params,
 
         })
+        next()
     } catch (e: any) {
         return res.status(400).send(e.errors)
     }
